@@ -19,3 +19,9 @@ jobs:
       run: |
         sudo apt-get install gcc
         make
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: built-artifact
+        path: hello  
